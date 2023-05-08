@@ -1,10 +1,13 @@
 n = int(input())
 
 for i in range(n):
-    a, b = map(int, input().split())
-
-    while b != 0:
-        r = a%b
-        a = b
-        b = r
-    print(a)
+  A,B = map(int,input().split())
+  a=A
+  b=B
+  n=1
+  while n!=0:
+    n=a%b
+    a=b
+    b=n
+    
+  print(int(A*B/a))
